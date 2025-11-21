@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; background:#f7f7f7; color:#222; }
+.container { width:800px; margin:30px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 3px 10px rgba(0,0,0,0.08); }
+textarea { width:100%; font-size:14px; }
+button { padding:8px 14px; }
+.box { margin-top:18px; padding:12px; background:#fafafa; border-left:4px solid #007bff; }
+pre { white-space:pre-wrap; }

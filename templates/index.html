@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Q&A System</title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        button { padding: 10px 20px; }
+        .box { background: #f3f3f3; padding: 15px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1> Question & Answer Assistant</h1>
+
+    <form method="POST">
+        <label>Enter your question:</label>
+        <input type="text" name="question" required>
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if question %}
+    <div class="box">
+        <h3>Processed Question:</h3>
+        <p>{{ processed }}</p>
+
+        <h3>LLM Answer:</h3>
+        <p>{{ answer }}</p>
+    </div>
+    {% endif %}
+
+</body>
+</html>
